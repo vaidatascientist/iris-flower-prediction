@@ -8,7 +8,19 @@
 </head>
 <body>
     <div class="h1">
-        <h1>Index hellooooo</h1>
+        <h1>Iris Flower Prediction</h1>
     </div>
+    
+    <form action = "{{ url_for('predict')}}" method = 'post'>
+        <input type="text" name="sepal length (cm)" placeholder="sepal length (cm)" required="required" /> <br>
+        <input type="text" name="sepal width (cm)" placeholder="sepal width (cm)" required="required" /> <br>
+        <input type="text" name="petal length (cm)" placeholder="petal length (cm)" required="required" /> <br><br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button>
+    </form>
+    <br><br>
+
+    {{prediction_text}}
+
 </body>
 </html>
