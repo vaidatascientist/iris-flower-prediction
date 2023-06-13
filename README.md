@@ -17,17 +17,3 @@ deactivate
 ```
 
 You can also create a new environment directly through the VS Code Command Prompt
-
-For Flask versions >1.0.2, use this command to run the server from the terminal:-
-(Assuming your file is named "app.py")
-
-```
-FLASK_APP=app.py flask run
-```
-
-Also no need to include this part in your Python script:-
-
-```
-if __name__ == "__main__":
-    app.run(debug=True)
-```
