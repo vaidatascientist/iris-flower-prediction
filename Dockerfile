@@ -4,6 +4,8 @@ COPY . /app
 WORKDIR /app
 
 RUN apt update -y && apt install awscli -y
+# sudo apt-get update -y
+# sudo apt-get upgrade
 RUN pip install -r requirements.txt
 
 # EXPOSE $PORT
