@@ -1,0 +1,14 @@
+# version: '3.0'
+# services:
+#   web:
+#     image: "web-app"
+#     build: .
+#     ports:
+#       - "8000:5000"
+#   redis:
+#     image: "redis:alpine"
+#   mysql:
+#     image: "mysql"
+
+## docker compose up
+## docker compose stop
