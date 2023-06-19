@@ -15,3 +15,5 @@ CMD ["python", "app.py"]
 ## docker stop {container id}
 ## docker pull {image name}
 ## docker push {image name}
+## docker build -t {image name} .
+## docker run -d -p 5000:5000 {image name}
